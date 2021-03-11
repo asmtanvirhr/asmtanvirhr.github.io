@@ -412,46 +412,24 @@ ol {
 }
 
 .social-links {
-	width: 40px;
+	width: 500px;
+
 }
 
 .social-links a {
 	font-size: 18px;
-	display: block;
+	display: inline;
+	margin-right: 15px;
 	color: #c6d7d8;
 	margin-bottom: 29px;
 	-webkit-transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
-	transform: rotate(-90deg);
+	transform: rotate(0deg);
 	-webkit-transform-origin: top left;
 	-ms-transform-origin: top left;
 	transform-origin: top left;
 }
 
-.social-text {
-	font-size: 14px;
-	font-weight: 700;
-	color: #323232;
-	text-transform: uppercase;
-	width: 215px;
-	position: relative;
-	-webkit-transform: rotate(-90deg) translateX(-200px);
-	-ms-transform: rotate(-90deg) translateX(-200px);
-	transform: rotate(-90deg) translateX(-200px);
-	-webkit-transform-origin: top left;
-	-ms-transform-origin: top left;
-	transform-origin: top left;
-}
-
-.social-text:after {
-	position: absolute;
-	content: "";
-	width: 101px;
-	height: 2px;
-	right: 0;
-	top: calc(50% - 1px);
-	background: #000;
-}
 
 .copyright {
 	position: fixed;
