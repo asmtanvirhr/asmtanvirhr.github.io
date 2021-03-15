@@ -13,7 +13,7 @@
 			items: 12,
 			items_per_row: 4,
 			margin: 1,
-			lazy_load: true,
+			lazy_load: false,
 			on_error: console.error
 		});
 	});
