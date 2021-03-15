@@ -1,0 +1,62 @@
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Instafeed -->
+<script src="https://www.sowecms.com/demos/jquery.instagramFeed/jquery.instagramFeed.min.js">
+</script>
+<script>
+  //instafeed
+(function ($) {
+    $(window).on('load', function () {
+        $.instagramFeed({
+            'username': 'asmtanvirhr',
+            'container': "#instagram-feed",
+            'display_profile': false,
+            'display_biography': false,
+            'display_gallery': true,
+            'callback': null,
+            'styling': false,
+            'items': 12,
+            'items_per_row': 3,
+            'margin': 1,
+            'lazy_load': false,
+            'on_error': console.error
+        });
+    });
+})(jQuery);
+</script>
+    <h2 class="text-center">Responsive Intstafeed</h2>
+<div id="instagram-feed">
+</div>
+<style>
+.text-center {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#instagram-feed{
+  max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+  
+}
+.instagram_gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.instagram_gallery a{
+   margin: 10px;
+  flex-basis: 180px;
+}
+.instagram_gallery img{
+  max-width: 100%;
+  display: block;
+}
+@media only screen and (max-width: 480px) {
+  .instagram_gallery{
+      flex-direction: column;
+      align-items: center;
+  }
+}
+</style>
